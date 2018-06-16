@@ -7,7 +7,7 @@ LABEL maintainer="Alexandre GARINO <alexandre.garino@odaceo.ch>"
 
 ENV LANG C.UTF-8
 
-ADD scripts/*.sh /root/
+COPY scripts/devtools.sh /root/
 RUN set -eux; /root/devtools.sh
 
 VOLUME ["/code"]
