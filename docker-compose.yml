@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  ubuntu16:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILDPACK_VERSION: 16.04
+    image: odaceo/builder:ubuntu16
+  
+  ubuntu18:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILDPACK_VERSION: 18.04
+    image: odaceo/builder:ubuntu18

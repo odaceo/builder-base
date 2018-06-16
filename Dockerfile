@@ -1,4 +1,6 @@
-FROM buildpack-deps:18.04
+ARG BUILDPACK_VERSION
+
+FROM buildpack-deps:${BUILDPACK_VERSION}
 
 LABEL vendor="Odaceo" 
 LABEL maintainer="Alexandre GARINO <alexandre.garino@odaceo.ch>"
