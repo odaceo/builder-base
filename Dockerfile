@@ -1,5 +1,4 @@
 ARG BUILDPACK_VERSION
-
 FROM buildpack-deps:${BUILDPACK_VERSION}
 
 LABEL vendor="Odaceo" 
