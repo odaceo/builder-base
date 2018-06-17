@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        BUILDPACK_VERSION: 16.04
+        BUILDPACK_VERSION: '16.04'
     image: odaceo/builder:ubuntu16
   
   ubuntu18:
@@ -15,5 +15,5 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        BUILDPACK_VERSION: 18.04
+        BUILDPACK_VERSION: '18.04'
     image: odaceo/builder:ubuntu18
